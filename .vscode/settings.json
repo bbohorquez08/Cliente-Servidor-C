@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "protocol.h": "c",
+        "sendwrite.h": "c",
+        "types.h": "c",
+        "crear_directorio_files.h": "c"
+    }
+}

@@ -1,0 +1,16 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella'
+make -C librerias
+make[1]: Entering directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/librerias'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/librerias'
+make -C cliente
+make[1]: Entering directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/cliente'
+gcc -o client client.o ../librerias/protocol.o ../librerias/split.o ../librerias/sendwrite.o ../librerias/crear_directorio_files.o
+make[1]: Leaving directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/cliente'
+make -C servidor
+make[1]: Entering directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/servidor'
+gcc -pthread -lrt -o server server.o ../librerias/protocol.o ../librerias/split.o ../librerias/sendwrite.o ../librerias/crear_directorio_files.o
+make[1]: Leaving directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella/servidor'
+make: Leaving directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella98%/parcial_2_bbohorquez_jabella'
+ 

@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella90%/parcial_2_bbohorquez_jabella/servidor'
+gcc -c -I../librerias -o server.o server.c
+gcc -pthread -lrt -o server server.o ../librerias/protocol.o ../librerias/split.o ../librerias/sendwrite.o
+make: Leaving directory '/home/juanf/Descargas/parcial_2_bbohorquez_jabella90%/parcial_2_bbohorquez_jabella/servidor'
+ 
